@@ -7,11 +7,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.Firebase;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
-import my.first.crud_android.database.DatabaseHelper;
 
 public class AddCrudActivity extends AppCompatActivity {
 
