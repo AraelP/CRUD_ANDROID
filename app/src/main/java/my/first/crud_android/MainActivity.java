@@ -17,18 +17,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Escribe un mensaje en la base de datos de Firebase
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("message");
-
-        myRef.setValue("Hello, mama");
-
         // Configurar el botón para agregar un Pokémon
         Button btnAddPokemon = findViewById(R.id.btn_add_pokemon);
         btnAddPokemon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AddCrudActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button btnViewPokemon = findViewById(R.id.btn_view_pokemon);
+        btnViewPokemon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ReadListPokeAtivity.class);
                 startActivity(intent);
             }
         });
