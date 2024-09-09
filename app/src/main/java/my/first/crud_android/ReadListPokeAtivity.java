@@ -31,7 +31,7 @@ public class ReadListPokeAtivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_read_list_poke_ativity);
+        setContentView(R.layout.activity_read_list_poke_activity);
 
         listView = findViewById(R.id.listView);
         pokemonList = new ArrayList<>();
@@ -89,6 +89,7 @@ public class ReadListPokeAtivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 
 }

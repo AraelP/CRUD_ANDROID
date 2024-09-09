@@ -9,10 +9,16 @@
     tools:context=".UpdatePokeActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/linearLayout2"
+        android:layout_width="354dp"
+        android:layout_height="393dp"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
         <EditText
             android:id="@+id/et_pokemon_name"
@@ -45,8 +51,21 @@
             android:id="@+id/btn_delete_pokemon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Eliminar Pokémon"
-            android:layout_marginTop="16dp"/>
+            android:text="Eliminar Pokémon" />
+
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="223dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333"
+        app:srcCompat="@drawable/international_pok_mon_logo_svg"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
